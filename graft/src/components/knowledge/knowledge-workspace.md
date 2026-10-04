@@ -1,0 +1,15 @@
+# src/components/knowledge/knowledge-workspace.tsx
+
+- daysOld · function · L56-L58 — function daysOld(value: string)
+- SourceInspector · function · L60-L137 — function SourceInspector({ source, conflicts, sources, onClose, }: { source: KnowledgeSource; conflicts: KnowledgeConflict[]; sources: KnowledgeSource[]; onClose: () => void; })
+- action · function · L74-L74 — action = (message: string)
+- GapsView · function · L139-L152 — function GapsView({ gaps }: { gaps: KnowledgeGap[] })
+- act · function · L141-L144 — act = (gap: KnowledgeGap, state: string, message: string)
+- ConflictCard · function · L154-L168 — function ConflictCard({ conflict, sources }: { conflict: KnowledgeConflict; sources: KnowledgeSource[] })
+- act · function · L159-L159 — act = (next: KnowledgeConflict["status"], message: string)
+- sourcePanel · function · L161-L161 — sourcePanel = (source: KnowledgeSource, claim: string)
+- CoverageView · function · L170-L178 — function CoverageView({ coverage, sources }: { coverage: KnowledgeCoverage[]; sources: KnowledgeSource[] })
+- coverageTone · function · L171-L171 — coverageTone = (value: KnowledgeCoverage["coverage"])
+- KnowledgeWorkspace · function · L180-L245 — function KnowledgeWorkspace()
+- pickSource · function · L210-L210 — pickSource = (id: string)
+- row · function · L212-L212 — row = (id: string, title: string, subtitle: string, value: string | number, selected: boolean, pick: () => void)

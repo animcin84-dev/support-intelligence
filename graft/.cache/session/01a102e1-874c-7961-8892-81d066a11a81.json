@@ -1,0 +1,13 @@
+{
+  "lastQuery": "<send_user_message_question_reply>\n[{\"questionItemId\":\"[\\\"request_user_input_async\\\",\\\"call_bTrq3YEHj0Hc17VRurNKwHcx\\\",0]\",\"question\":\"Разрешаете отключить SSO только у нового проекта Support Intelligence, чтобы ссылка открывалась всем без аккаунта Vercel? Это постоянное изменение доступа; сейчас сайт содержит только данные-примеры.\",\"answer\":\"Да, отключить SSO у Support Intelligence\"}]\n</send_user_message_question_reply>",
+  "perAgentQuery": {},
+  "graftReads": 0,
+  "sourceReads": 0,
+  "savedTokens": 0,
+  "injectedPointers": [
+    "src/server/integrations/whatsapp/config.ts:L7-L17",
+    "src/server/services/whatsapp-service.ts",
+    "src/components/integrations/whatsapp-integration.tsx"
+  ],
+  "nudges": 2
+}

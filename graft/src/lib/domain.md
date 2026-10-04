@@ -1,0 +1,58 @@
+# src/lib/domain.ts
+
+- Priority · type · L3-L3 — type Priority = "low" | "medium" | "high" | "critical";
+- AnalysisState · type · L4-L4 — type AnalysisState = "simulated" | "pending" | "running" | "completed" | "failed";
+- ConversationAnalysis · interface · L5-L31 — interface ConversationAnalysis
+- ConversationPriority · type · L32-L32 — type ConversationPriority = Priority | "untriaged";
+- ConversationStatus · type · L33-L39 — type ConversationStatus = | "new" | "open" | "waiting_customer" | "waiting_agent" | "escalated" | "resolved";
+- Channel · type · L40-L40 — type Channel = "email" | "web" | "telegram" | "whatsapp" | "api";
+- Customer · interface · L42-L53 — interface Customer
+- ConversationListItem · interface · L55-L72 — interface ConversationListItem
+- TriageSignal · interface · L74-L79 — interface TriageSignal
+- EvidenceSource · interface · L81-L91 — interface EvidenceSource
+- AIDraft · interface · L93-L100 — interface AIDraft
+- PolicyDecision · interface · L102-L106 — interface PolicyDecision
+- ConversationDetail · interface · L108-L142 — interface ConversationDetail
+- IssueTimelinePoint · interface · L144-L150 — interface IssueTimelinePoint
+- IssueCorrelationCandidate · interface · L152-L159 — interface IssueCorrelationCandidate
+- EmergingIssue · interface · L161-L200 — interface EmergingIssue
+- KnowledgeSource · interface · L202-L219 — interface KnowledgeSource
+- KnowledgeGap · interface · L221-L232 — interface KnowledgeGap
+- KnowledgeConflict · interface · L234-L246 — interface KnowledgeConflict
+- KnowledgeCoverage · interface · L248-L254 — interface KnowledgeCoverage
+- AIQualityMetrics · interface · L256-L265 — interface AIQualityMetrics
+- KnowledgeHealthState · type · L268-L268 — type KnowledgeHealthState = "healthy" | "aging" | "stale" | "conflict" | "missing";
+- AIOutcomeDecision · type · L269-L269 — type AIOutcomeDecision = "unchanged" | "minor_edit" | "major_edit" | "rejected" | "human_takeover";
+- AIFailureType · type · L270-L284 — type AIFailureType = | "unsupported_claim" | "missing_knowledge" | "stale_knowledge" | "conflicting_sources" | "wrong_intent" | "wrong_priority" | "policy_block" | "identity_missing" | "incorrect_action" | "poor_tone" | "human_takeover" | "customer_rejected" | "reopened" | "retrieval_failure";
+- FailureCause · type · L286-L286 — type FailureCause = "knowledge" | "policy" | "retrieval" | "intent_triage" | "identity" | "generation" | "other";
+- ModelVersion · interface · L288-L293 — interface ModelVersion
+- PromptVersion · interface · L295-L298 — interface PromptVersion
+- RetrievalVersion · interface · L300-L303 — interface RetrievalVersion
+- AIOutcome · interface · L305-L323 — interface AIOutcome
+- AIFailure · interface · L325-L351 — interface AIFailure
+- QualityTrendPoint · interface · L353-L360 — interface QualityTrendPoint
+- EvaluationSuite · interface · L362-L371 — interface EvaluationSuite
+- EvaluationCase · interface · L373-L383 — interface EvaluationCase
+- EvaluationRun · interface · L385-L393 — interface EvaluationRun
+- ShadowSimulation · interface · L395-L405 — interface ShadowSimulation
+- AutomationReadiness · interface · L407-L416 — interface AutomationReadiness
+- QualityRecommendation · interface · L418-L426 — interface QualityRecommendation
+- ActionRisk · type · L428-L434 — type ActionRisk = | "read_only" | "low_risk_reversible" | "customer_impacting_reversible" | "financial" | "security_sensitive" | "irreversible";
+- ExecutionStatus · type · L436-L442 — type ExecutionStatus = | "pending" | "executing" | "succeeded" | "failed" | "rolled_back" | "cancelled";
+- ExecutionFailureType · type · L444-L449 — type ExecutionFailureType = | "timeout" | "provider_error" | "validation_error" | "conflict" | "partial_success";
+- ActionDefinition · interface · L451-L466 — interface ActionDefinition
+- PolicyVersion · interface · L468-L477 — interface PolicyVersion
+- AutomationPolicy · interface · L479-L497 — interface AutomationPolicy
+- ProcedureStepType · type · L499-L511 — type ProcedureStepType = | "understand" | "ask_customer" | "retrieve_data" | "validate" | "branch" | "policy_check" | "request_confirmation" | "human_approval" | "execute_action" | "verify_result" | "send_response" | "escalate";
+- ProcedureStep · interface · L513-L519 — interface ProcedureStep
+- AutomationProcedure · interface · L521-L537 — interface AutomationProcedure
+- ExecutionRecord · interface · L539-L551 — interface ExecutionRecord
+- ApprovalRequest · interface · L553-L571 — interface ApprovalRequest
+- RolloutConfig · interface · L573-L599 — interface RolloutConfig
+- AutomationDecision · interface · L601-L611 — interface AutomationDecision
+- AutomationAuditEvent · interface · L613-L641 — interface AutomationAuditEvent
+- ConnectorHealth · interface · L643-L651 — interface ConnectorHealth
+- AutomationIncidentGate · interface · L653-L660 — interface AutomationIncidentGate
+- ReadinessExplanation · interface · L662-L681 — interface ReadinessExplanation
+- PolicyReplay · interface · L683-L691 — interface PolicyReplay
+- ProcedureSimulation · interface · L693-L711 — interface ProcedureSimulation

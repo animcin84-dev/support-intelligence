@@ -10,3 +10,6 @@ credentials.json
 client_secret*.json
 refresh-token*.json
 *.pem
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/

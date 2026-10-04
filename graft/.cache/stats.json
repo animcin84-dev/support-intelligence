@@ -1,0 +1,16 @@
+{
+  "nodeCount": 646,
+  "edgeCount": 1604,
+  "languages": [
+    "javascript",
+    "tsx",
+    "typescript"
+  ],
+  "totalCount": 646,
+  "readyCount": 0,
+  "staleCount": 0,
+  "dirty": false,
+  "syncing": false,
+  "syncedAt": "2026-10-04T09:51:43.948Z",
+  "lastFile": "restaurant-whatsapp.spec.ts"
+}
